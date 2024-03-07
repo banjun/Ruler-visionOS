@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6308E8B32B99DB6600A260CC /* DynamicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */; };
 		63E8487B2B871CE600F58287 /* RulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8487A2B871CE600F58287 /* RulerApp.swift */; };
-		63E8487D2B871CE600F58287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8487C2B871CE600F58287 /* ContentView.swift */; };
+		63E8487D2B871CE600F58287 /* PhysicalRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8487C2B871CE600F58287 /* PhysicalRuler.swift */; };
 		63E8487F2B871CEE00F58287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E8487E2B871CEE00F58287 /* Assets.xcassets */; };
 		63E848822B871CEE00F58287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E848812B871CEE00F58287 /* Preview Assets.xcassets */; };
+		63E8488B2B87412800F58287 /* SwiftHotReload in Frameworks */ = {isa = PBXBuildFile; productRef = 63E8488A2B87412800F58287 /* SwiftHotReload */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicScaleView.swift; sourceTree = "<group>"; };
 		63E848732B871CE600F58287 /* Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E8487A2B871CE600F58287 /* RulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerApp.swift; sourceTree = "<group>"; };
-		63E8487C2B871CE600F58287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63E8487C2B871CE600F58287 /* PhysicalRuler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalRuler.swift; sourceTree = "<group>"; };
 		63E8487E2B871CEE00F58287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E848812B871CEE00F58287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63E848832B871CEE00F58287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E8488C2B8741D700F58287 /* RuntimeOverrides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeOverrides.swift; sourceTree = "<group>"; };
+		63E8488F2B87547D00F58287 /* SwiftHotReload */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftHotReload; path = ../../github/SwiftHotReload; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E8488B2B87412800F58287 /* SwiftHotReload in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +42,7 @@
 		63E8486A2B871CE600F58287 = {
 			isa = PBXGroup;
 			children = (
+				63E8488F2B87547D00F58287 /* SwiftHotReload */,
 				63E848752B871CE600F58287 /* Ruler */,
 				63E848742B871CE600F58287 /* Products */,
 			);
@@ -52,8 +59,10 @@
 		63E848752B871CE600F58287 /* Ruler */ = {
 			isa = PBXGroup;
 			children = (
+				63E8488C2B8741D700F58287 /* RuntimeOverrides.swift */,
 				63E8487A2B871CE600F58287 /* RulerApp.swift */,
-				63E8487C2B871CE600F58287 /* ContentView.swift */,
+				6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */,
+				63E8487C2B871CE600F58287 /* PhysicalRuler.swift */,
 				63E8487E2B871CEE00F58287 /* Assets.xcassets */,
 				63E848832B871CEE00F58287 /* Info.plist */,
 				63E848802B871CEE00F58287 /* Preview Content */,
@@ -86,6 +95,7 @@
 			);
 			name = Ruler;
 			packageProductDependencies = (
+				63E8488A2B87412800F58287 /* SwiftHotReload */,
 			);
 			productName = Ruler;
 			productReference = 63E848732B871CE600F58287 /* Ruler.app */;
@@ -115,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 63E8486A2B871CE600F58287;
+			packageReferences = (
+				63E848892B87412800F58287 /* XCRemoteSwiftPackageReference "SwiftHotReload" */,
+			);
 			productRefGroup = 63E848742B871CE600F58287 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E8487D2B871CE600F58287 /* ContentView.swift in Sources */,
+				63E8487D2B871CE600F58287 /* PhysicalRuler.swift in Sources */,
 				63E8487B2B871CE600F58287 /* RulerApp.swift in Sources */,
+				6308E8B32B99DB6600A260CC /* DynamicScaleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ruler/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4FGMLE57E7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -285,7 +299,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.banjun.exp.Ruler;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -enable-private-imports -Xfrontend -enable-implicit-dynamic";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zozo.jp.banjun.exp.Ruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -303,7 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ruler/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4FGMLE57E7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -312,7 +327,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.banjun.exp.Ruler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zozo.jp.banjun.exp.Ruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63E848892B87412800F58287 /* XCRemoteSwiftPackageReference "SwiftHotReload" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/banjun/SwiftHotReload";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63E8488A2B87412800F58287 /* SwiftHotReload */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63E848892B87412800F58287 /* XCRemoteSwiftPackageReference "SwiftHotReload" */;
+			productName = SwiftHotReload;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63E8486B2B871CE600F58287 /* Project object */;
 }
