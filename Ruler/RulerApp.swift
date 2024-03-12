@@ -22,17 +22,17 @@ struct RulerApp: App {
     var body: some Scene {
         WindowGroup(id: "Plain") {
             WindowSceneReader { windowScene, window in
-            VStack {
-                Text("Dynamic Scale")
-                    .font(.title)
+                VStack {
+                    Text("Dynamic Scale")
+                        .font(.title)
 
-                DynamicScaleView {
-                    openWindow(id: "Volumetric")
+                    DynamicScaleView {
+                        openWindow(id: "Volumetric")
+                    }
                 }
-            }
-            .frame(minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275)
+                .frame(minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275)
                 .onChange(of: window) {
-                // refs. HappyBeam example and https://gist.github.com/drewolbrich/03460fc1bb71b9a821fff722f17ec977
+                    // refs. HappyBeam example and https://gist.github.com/drewolbrich/03460fc1bb71b9a821fff722f17ec977
                     windowScene()?.requestGeometryUpdate(.Vision(resizingRestrictions: .some(.none)))
                 }
             }
