@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6308E8B32B99DB6600A260CC /* DynamicScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */; };
+		634436C22BA039360097BFB9 /* WindowSceneReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634436C12BA039360097BFB9 /* WindowSceneReader.swift */; };
 		63E8487B2B871CE600F58287 /* RulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8487A2B871CE600F58287 /* RulerApp.swift */; };
 		63E8487D2B871CE600F58287 /* PhysicalRuler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8487C2B871CE600F58287 /* PhysicalRuler.swift */; };
 		63E8487F2B871CEE00F58287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E8487E2B871CEE00F58287 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicScaleView.swift; sourceTree = "<group>"; };
+		634436C12BA039360097BFB9 /* WindowSceneReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSceneReader.swift; sourceTree = "<group>"; };
 		63E848732B871CE600F58287 /* Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E8487A2B871CE600F58287 /* RulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerApp.swift; sourceTree = "<group>"; };
 		63E8487C2B871CE600F58287 /* PhysicalRuler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalRuler.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				63E8487A2B871CE600F58287 /* RulerApp.swift */,
 				6308E8B22B99DB6600A260CC /* DynamicScaleView.swift */,
 				63E8487C2B871CE600F58287 /* PhysicalRuler.swift */,
+				634436C12BA039360097BFB9 /* WindowSceneReader.swift */,
 				63E8487E2B871CEE00F58287 /* Assets.xcassets */,
 				63E848832B871CEE00F58287 /* Info.plist */,
 				63E848802B871CEE00F58287 /* Preview Content */,
@@ -157,6 +160,7 @@
 				63E8487D2B871CE600F58287 /* PhysicalRuler.swift in Sources */,
 				63E8487B2B871CE600F58287 /* RulerApp.swift in Sources */,
 				6308E8B32B99DB6600A260CC /* DynamicScaleView.swift in Sources */,
+				634436C22BA039360097BFB9 /* WindowSceneReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@ struct RulerApp: App {
 
     var body: some Scene {
         WindowGroup(id: "Plain") {
+            WindowSceneReader { windowScene, window in
             VStack {
                 Text("Dynamic Scale")
                     .font(.title)
@@ -30,10 +31,10 @@ struct RulerApp: App {
                 }
             }
             .frame(minWidth: 275, maxWidth: 275, minHeight: 275, maxHeight: 275)
-            .onAppear {
+                .onChange(of: window) {
                 // refs. HappyBeam example and https://gist.github.com/drewolbrich/03460fc1bb71b9a821fff722f17ec977
-                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
-                windowScene.requestGeometryUpdate(.Vision(resizingRestrictions: .some(.none)))
+                    windowScene()?.requestGeometryUpdate(.Vision(resizingRestrictions: .some(.none)))
+                }
             }
         }.windowStyle(.plain)
             .windowResizability(.contentSize)
