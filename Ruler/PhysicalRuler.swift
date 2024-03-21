@@ -30,7 +30,12 @@ struct PhysicalRuler: View {
             }
 
             Picker("Length", selection: $cm) {
-                // NOTE: 300cm may not work for a volumetric window
+                // NOTE: 300cm may not work for a volumetric window.
+                // for visionOS 1.1, the Window Zoom system settings & volumetric upper bound are below:
+                //       Small: 1836pt/m, < 148cm (~2717pt)
+                //      Medium: 1564pt/m, < 173cm (~2706pt)
+                //       Large: 1360pt/m, < 199cm (~2706pt)
+                // Extra Large: 1156pt/m, < 234cm (~2705pt)
                 ForEach([CGFloat]([10, 15, 20, 30, 50, 100, 200, 300]), id: \.self) {
                     Text("\(formatter.string(from: .init(value: $0))!) cm").tag($0)
                 }
